@@ -8,11 +8,17 @@ const props = defineProps({
 
 <template>
 
-<button type="button"> {{ props.texto }} </button>
+
+
+<button type="button"> <slot> {{ props.texto }} </slot> </button>
+
+
 
 </template>
 
 <style scoped>
+
+
 
 button {
 
